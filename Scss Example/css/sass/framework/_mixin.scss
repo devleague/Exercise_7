@@ -1,0 +1,17 @@
+// Mixins
+// --------------------------------
+
+// Animation & Keyframes
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} { @content }
+  @-moz-keyframes #{$name} { @content; }
+  @-ms-keyframes #{$name} { @content; }
+  @keyframes #{$name} { @content; }
+}
+@mixin animation-support($property, $value) {
+  @include experimental($property, $value, -moz, -webkit, -o, -ms, not -khtml, official);
+}
+@mixin animation($animation-1: default, $animation-2: false, $animation-3: false, $animation-4: false, $animation-5: false, $animation-6: false, $animation-7: false, $animation-8: false, $animation-9: false, $animation-10: false) {
+  $animation: compact($animation-1, $animation-2, $animation-3, $animation-4, $animation-5, $animation-6, $animation-7, $animation-8, $animation-9, $animation-10);
+  @include animation-support(animation, $animation);
+}

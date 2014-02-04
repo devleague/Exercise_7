@@ -1,0 +1,44 @@
+/*!
+ * Project Name
+ * -----------------------
+ */
+
+// START SCSS
+// Run following command relative to root folder
+// $ sass --watch css:css
+// It will detect changes in "sass" folder and overide "style.css"
+
+@import "compass";
+
+// Bootstrap
+// ---------------------------------------------------
+@import "sass/framework/bootstrap/variables"; // customize bootstrap variables
+@import "bootstrap";
+
+// Mixin, Variables, Etc
+// ---------------------------------------------------
+@import "sass/framework/config";
+@import "sass/framework/media-queries";
+@import "sass/framework/colors";
+@import "sass/framework/typography";
+@import "sass/framework/mixin";
+
+// Modules
+// ---------------------------------------------------
+@import "sass/modules/buttons";
+@import "sass/modules/forms";
+@import "sass/modules/headings";
+@import "sass/modules/images";
+@import "sass/modules/links";
+
+// Page Styles
+// ---------------------------------------------------
+// Partials
+@import "sass/partials/base";
+@import "sass/partials/header";
+@import "sass/partials/navigation";
+@import "sass/partials/footer";
+// Sections
+
+// Typography
+@import "sass/modules/fonts";
