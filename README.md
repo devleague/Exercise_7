@@ -58,3 +58,8 @@
       - #main_nav .top-bar .top-bar-section .right > ul > li
       - #main_nav .top-bar .top-bar-section .right > ul > li > a
       - #main_nav .top-bar .top-bar-section .right > ul > li.has-dropdown > a
+
+---
+
+Added some examples in Scss Examples/ from @YoEmanYo  
+requires compass and bootstrap gem
